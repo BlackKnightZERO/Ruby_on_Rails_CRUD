@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Friend List</h1>
 <div class="table-responsive">
-  <table class="table table-striped table-hover">
-    <thead>
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
       <tr>
         <th scope="col">First name</th>
         <th scope="col">Last name</th>
@@ -32,4 +30,6 @@
 </div>
 <br>
 
-<%= link_to 'New Friend', new_friend_path %>
+<!-- <button type="button" class="btn btn-secondary">Add Friend</button> -->
+
+<%= link_to 'Friend Add', new_friend_path, class:"btn btn-secondary" %>
