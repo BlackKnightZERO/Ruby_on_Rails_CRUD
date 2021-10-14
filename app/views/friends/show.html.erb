@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table-bordered table-striped mt-4">
+  <tr>
+    <td><b>First name</b></td>
+    <td><%= @friend.first_name %></td>
+  </tr>
+  <tr>
+    <td><b>Last name</b></td>
+    <td><%= @friend.last_name %></td>
+  </tr>
+  <tr>
+    <td><b>Email</b></td>
+    <td><%= @friend.email %></td>
+  </tr>
+  <tr>
+    <td><b>Phone</b></td>
+    <td><%= @friend.phone %></td>
+  </tr>
+  <tr>
+    <td><b>Facebook</b></td>
+    <td><%= @friend.facebook %></td>
+  </tr>
+</table>
+
+<!-- <p>
+  <strong>First name:</strong>
+  <%= @friend.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @friend.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @friend.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @friend.phone %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @friend.facebook %>
+</p> -->
+
+<%= link_to 'Edit', edit_friend_path(@friend) %> |
+<%= link_to 'Back', friends_path %>
